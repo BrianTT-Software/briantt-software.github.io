@@ -295,6 +295,18 @@
     fixedContentPos: false
   });
 
+  $('form').on('submit', processForm);
+
+  function processForm() {
+	//alert("Confirmado")
+	var mensaje = "Name: ";
+	var mensaje_final = mensaje.concat(document.confirmationForm.name.value, 
+							"\nEmail: ", document.confirmationForm.email.value,
+							"\nInvitados: ", document.confirmationForm.invitados.value,
+							"\nMessage: ", document.confirmationForm.message.value);
+	console.log(mensaje_final);
+  }
+
   var bgVideo = function() {
 		$('.player').mb_YTPlayer();
 	};

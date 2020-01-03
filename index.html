@@ -476,13 +476,13 @@
         </div>
         <div class="row justify-content-center">
         	<div class="col-md-7">
-        		<form action="#" class="rsvp-form ftco-animate">
+        		<form  name="confirmationForm" onsubmit="return false" class="rsvp-form ftco-animate">
 	    				<div class="">
 		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="Nombre">
+		    					<input type="text" name="name" class="form-control" placeholder="Nombre">
 		    				</div>
 		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="Correo electrónico">
+		    					<input type="text" name="email" class="form-control" placeholder="Correo electrónico">
 		    				</div>
 	    				</div>
 	    				<div class="">
@@ -490,14 +490,14 @@
 		    					<div class="form-field">
           					<div class="select-wrap">
                       <div class="icon d-flex align-items-center justify-content-center"><span class="ion-ios-arrow-down"></span></div>
-                      <select name="" id="" class="form-control">
+                      <select name="invitados" id="" class="form-control">
                       	<option value="">Invitados</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-						<option value="">5</option>
-						<option value="">6</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
                       </select>
                     </div>
 		              </div>
@@ -505,7 +505,7 @@
 	    				</div>
 	    				<div class="">
 	    					<div class="form-group">
-		              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Mensaje"></textarea>
+		              <textarea name="message" id="" cols="30" rows="2" class="form-control" placeholder="Mensaje"></textarea>
 		            </div>
 		            <div class="form-group">
 		              <input type="submit" value="Estaré asistiendo" class="btn btn-primary py-3 px-4">
