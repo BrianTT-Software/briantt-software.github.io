@@ -305,6 +305,8 @@
 							"\nInvitados: ", document.confirmationForm.invitados.value,
 							"\nMessage: ", document.confirmationForm.message.value);
 	console.log(mensaje_final);
+	//$.post( "https://brianttsoftware.pythonanywhere.com/postmethod", {data: mensaje_final});
+	//$.post( "http://127.0.0.1:5000/postmethod", {data: mensaje_final});
   }
 
   var bgVideo = function() {
